@@ -1,0 +1,57 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+<div class="work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Publications</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Portfolio Start -->
+
+<section id="publications">
+  <div class="background"> 
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="item">
+          {% for publication in site.data.publications %}
+        <div>
+      <h1>{{ publication.title }}</h1>
+        <h2>{{ publication.info }}</h2>
+        <p class="article">{{ publication.article1}}</p>
+        <p class="article">{{ publication.article2}}</p>
+        <p class="article">{{ publication.article3}}</p>
+        <p class="article">{{ publication.article4}}</p>
+        </div>
+          {% endfor %}
+        </div>
+
+
+
+       
+  </div>
+</div> 
+</div>
+</div>
+</section>
+
+<section id="button">
+  <div class="container">
+    <div class="center">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Return to top</button>
+  </div>
+  </div>
+  </section>
