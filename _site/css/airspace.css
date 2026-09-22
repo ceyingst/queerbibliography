@@ -29,19 +29,24 @@ h6 {
   font-family: 'Orelega One', serif;
   font-weight: 700;
 }
+
 h2 {
   font-size: 25px;
   font-weight: 700;
 }
+
 h3 {
   font-size: 28px;
   font-weight: 700;
 
 }
+
 p {
   font-size: 15px;
   line-height: 25px;
+  margin-left: 25px;
 }
+
 ul {
   padding: 0;
   margin: 0;
@@ -84,7 +89,7 @@ margin-left: -20px;
 
 header .navbar-brand {
   font-family: 'Orelega One', serif;
-  font-size: 5vw;
+  font-size: 7vw;
   font-weight: 500;
   color: #22251a !important;
   position: absolute;
@@ -99,18 +104,22 @@ header .navbar-default {
 header .navbar-default .navbar-nav {
  
   position: relative;
+  margin-left: -20px;
 }
 
 header .navbar-default .navbar-nav li a {
   color: #22251a;
-  font-size: 1.3em;
+  font-size: 2vw;
   font-weight: 500;
   position: relative;
   font-family: 'Quicksand', sans-serif;
+  padding-top: 4vw;
+
 }
 
 header .navbar-default .navbar-nav li a:hover {
   color:  #d85de9 !important;
+  text-decoration: underline;
 }
 /*---------------------------------------------
 					Index Start
@@ -198,7 +207,7 @@ header .navbar-default .navbar-nav li a:hover {
 
 #global-header .block h1 {
   font-weight: 400;
-  font-size: 6vw;
+  font-size: 5.5vw;
   letter-spacing: 5px;
   text-transform: none;
   text-align: left;
@@ -212,28 +221,28 @@ header .navbar-default .navbar-nav li a:hover {
 --*/
 #conferences {
   overflow: hidden;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
 
 #conferences .item {
   text-align: left;
-  padding-left: 50px;
-  padding-bottom: 20px;
 }
 
 #conferences h1 {
  text-align: left;
  font-weight: 400;
- padding-left: 50px;
  
 }
 
 #conferences h2 {
   font-family: 'Quicksand', sans-serif; 
-  font-weight: 400;
+  font-weight: 500;
 }
 
+#conferences p {
+  line-height: 20px;
+  padding-left: 10px;
+}
 
 /*-----
 
@@ -253,7 +262,6 @@ Publications
 
 #publications .item {
   text-align: left;
-  padding-left: 50px;
   padding-bottom: 20px;
 
 }

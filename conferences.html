@@ -11,7 +11,7 @@ permalink: /Conferences/
 </style>
 
 <section id="global-header">
-<div class="publications">
+<div class="conferences">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -24,10 +24,13 @@ permalink: /Conferences/
   </div>
 </section>
 
-<section id="publications">
+
+<section id="conferences">
   <div class="container">
       <div class="row">
         <div class="col-md-12">
+
+          <!--
           <div class="item">
             <h1>Future</h1>
           </div>
@@ -35,9 +38,10 @@ permalink: /Conferences/
             {% for conference in site.data.fconferences %}
               <h2>{{ conference.title }}</h2>
                 <p class="article">{{ conference.date }}, {{ conference.location }}</p>
-                <p class="article">{{ conference.description }}</p>
+            
             {% endfor %}
           </div>
+        -->
 
         <div class="item">
           <h1>Past</h1>
@@ -46,7 +50,7 @@ permalink: /Conferences/
         {% for conference in site.data.pconferences %}
           <h2>{{ conference.title }}</h2>
             <p class="article">{{ conference.date }}, {{ conference.location }}</p>
-            <p class="article">{{ conference.description }}</p>
+      
         {% endfor %}
   </div>
   </div>
