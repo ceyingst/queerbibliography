@@ -19,6 +19,7 @@
 body {
   font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
+  
 }
 h1,
 h2,
@@ -52,12 +53,21 @@ ul {
   margin: 0;
   list-style: none;
 }
-a,
-a:active,
+a
+{
+  text-decoration: none;
+  color:#5c00a3
+}
+
+a:hover {
+
+  color:#d85de9
+}
 a:focus,
 a:active {
-  text-decoration: none;
+  color:#d85de9
 }
+
 .section-title {
   margin-bottom: 70px;
 }
@@ -73,51 +83,92 @@ a:active {
 
 
 
+
+.navhome {
+ font-weight: 200;
+ font-size: 20px;
+ margin-left: 70px;
+}
+
+#images {
+  padding-bottom: 30px;
+  padding-top: 50px;
+  
+}
+
+
+
+#images h1 {
+  font-size: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1px;
+}
+
+.grid-item {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
 /*--
 	Header Start
 --*/
-header {
-  padding-top: 50px;
-
+#header {
+padding-top: 50px;
+padding-bottom: 15px;
 }
 
-header .navbar {
+
+#header .navbar {
 font-family: 'Orelega One', serif;
 margin-left: -20px;
 }
 
 
-header .navbar-brand {
+#header .navbar-brand {
   font-family: 'Orelega One', serif;
   font-size: 7vw;
   font-weight: 500;
   color: #22251a !important;
   position: absolute;
+  line-height: 5vw;
 }
 
-header .navbar-default {
+#header .navbar-default {
   background: none;
   border: 0px;
   position: relative;
 }
 
-header .navbar-default .navbar-nav {
+#header .navbar-default .navbar-nav {
  
   position: relative;
   margin-left: -20px;
 }
 
-header .navbar-default .navbar-nav li a {
+#header .navbar-default .navbar-nav li a {
   color: #22251a;
   font-size: 2vw;
   font-weight: 500;
   position: relative;
   font-family: 'Quicksand', sans-serif;
-  padding-top: 4vw;
 
 }
 
-header .navbar-default .navbar-nav li a:hover {
+#header .navbar-default .navbar-nav li a:hover {
   color:  #d85de9 !important;
   text-decoration: underline;
 }
@@ -222,6 +273,7 @@ header .navbar-default .navbar-nav li a:hover {
 #conferences {
   overflow: hidden;
   padding-bottom: 50px;
+
 }
 
 #conferences .item {
@@ -231,6 +283,7 @@ header .navbar-default .navbar-nav li a:hover {
 #conferences h1 {
  text-align: left;
  font-weight: 400;
+
  
 }
 
@@ -253,7 +306,10 @@ Publications
   overflow: hidden;
   padding-top: 15px;
   padding-bottom: 10px;
+  
 }
+
+
 
 #publications h1 {
   text-align: left;
@@ -384,6 +440,14 @@ Contact
 /*--
 	footer Start
 --*/
+
+footer .footerimage {
+  background: url("../img/footer.jpg") no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  padding: 75px 0 75px 0;
+}
+
 footer {
 
   text-align: center;
