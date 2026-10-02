@@ -105,11 +105,34 @@ a:active {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1px;
+  grid-gap: 3rem;
 }
 
 .grid-item {
   text-align: left;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease;   /* smooth fade between states */
+}
+
+.grid-item img:hover {
+  filter: grayscale(0.9);        /* 90% grey */
+}
+
+.grid-item:hover img {
+  filter: grayscale(0.9);
+}
+
+.grid-item:has(img:hover) h1 a {
+  color: #d85de9;        /* your pink, matching the navbar hover */
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -133,18 +156,39 @@ padding-bottom: 15px;
 
 
 #header .navbar {
-font-family: 'Orelega One', serif;
-margin-left: -20px;
+  font-family: 'Orelega One', serif;
+  /* margin-left: -30px;  ← deleted */
 }
 
+#header .navbar-default {
+  background: none;
+  border: 0;
+}
 
 #header .navbar-brand {
   font-family: 'Orelega One', serif;
-  font-size: 7vw;
+  font-size: clamp(5rem, 7vw, 9rem);
   font-weight: 500;
   color: #22251a !important;
-  position: absolute;
-  line-height: 5vw;
+  line-height: 1.1;
+  height: auto;          /* override Bootstrap's fixed 50px */
+  padding: 0;           /* override Bootstrap's 15px */
+  padding-top: 10px;
+  padding-bottom: -10px;
+  float: none;
+  display: block;
+}
+
+.navhome {
+  font-weight: 200;
+  font-size: clamp(1.5rem, 2.5vw, 2.75rem);
+  margin: 0 0 0 0.25em;   /* small intentional indent, if you still want one */
+}
+
+#header .title-break { display: none; }
+
+@media (max-width: 768px) {
+  .title-break { display: inline; }
 }
 
 #header .navbar-default {
@@ -295,6 +339,42 @@ margin-left: -20px;
 #conferences p {
   line-height: 20px;
   padding-left: 10px;
+}
+
+/*-----
+
+CFP
+-----*/
+
+#CFP p {
+  line-height: 1.8;
+  margin-left: 0;
+  text-align: left;
+}
+
+#CFP {
+  overflow: hidden;
+  padding-bottom: 50px;
+
+}
+
+#CFP .item {
+  text-align: left;
+}
+
+#CFP h1 {
+ text-align: left;
+ font-weight: 400;
+
+}
+
+#CFP h2 {
+  font-family: 'Quicksand', sans-serif; 
+  font-weight: 500;
+}
+
+#CFP a {
+  font-weight: 500;
 }
 
 /*-----
